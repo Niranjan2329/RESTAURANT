@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+}
+.navbar{
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid grey;
+    
+}
+.logoimg{
+width: 60px;
+height: 90px;  
+cursor: pointer;
+}
+.logonm h3{
+    cursor: pointer;
+    font-size: 26px;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    padding:20px 20px;
+}
+
+.container{
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgcont{
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+.imgcont:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+.textcon{
+    padding: 10px 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.textcon .tag{
+    cursor: pointer;
+    padding: 10px 50px;
+    display: flex;
+    background-color: green;
+    color: white;
+    align-self: flex-start;
+}
+.textcon h2{
+    font-size: 40px;
+}
+.textcon p{
+    font-weight: 400;
+}
+button{
+    border: none;
+    padding: 10px 50px;
+    display: flex;
+    align-self: flex-start;
+}
+.expl_btn{
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: lightcoral;
+    transition: 0.25s ease-in-outs;
+}
+.expl_btn:hover{
+    transform: scale(1.02);
+    transition: 0.25s ease-in-outs;
+}
+.cardsection{
+    padding: 20px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card_container{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    border-radius: 10px;
+    padding: 20px 0;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    transition: 0.2s ease-in-out;
+
+}
+.cards img{
+    width: 70px;
+    height: 70px;
+}
+.cards:hover{
+    transform: scale(1.02);
+    background-color: rgb(237, 237, 237);
+    transition: 0.2s ease-in-out;
+}
+.border{
+    width: 100%;
+    border: 1px solid rgb(217, 217, 217);
+    margin-bottom: 25px;
+    
+}
+.menu{
+    width: 100%;
+}
+.menu .topsection{
+    width: 100%;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 50px;
+margin-bottom: 30px;
+
+}
+.menu .tag{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight:800;
+    color: white;
+    display: flex;
+    background-color: lightgreen;
+    padding: 20px 50px; 
+    transition: 0.25s ease-in-outs;
+
+}
+.menu .tag:hover{
+    transform: scale(1.02);
+    transition: 0.25s ease-in-outs;
+}
+.grid{
+    width: 100%;
+    padding: 10px 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "i1 i1 i2 i7"
+    "i1 i1 i2 i7"
+    "i4 i5 i6 i3"
+    ;  
+    margin-bottom: 60px;
+}
+.grrid img{
+    height: 100%;
+    width: 100%;
+}
+.item1{
+    grid-area: i1;
+}
+.item2{
+    grid-area: i2;
+}
+.item3{
+    grid-area: i3;
+}
+.item4{
+    grid-area: i4;
+}
+.item5{
+    grid-area: i5;
+}
+.item6{
+    grid-area: i6;
+}
+.item7{
+    grid-area: i7;
+}
+.grid img{
+    border-radius: 10px;
+    transition: 0.25s ease-in-outs;
+
+}
+.grid img:hover{
+    transform: scale(1.02);
+    transition: 0.25s ease-in-outs;
+}
+.footer{
+    background-color: lightcoral;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box a{
+    text-decoration: none;
+    gap: 5px;
+    color: white;
+  
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    .navbar .logoimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .logonm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoimg img {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 75px;
+    }
+
+    .logonm h3 {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .imgcont img{
+        width: 100%;
+  
+    }
+
+    .textcon h2 {
+        font-size: 28px;
+    }
+
+    .textcon p {
+        font-size: 14px;
+    }
+
+    .expl_btn {
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+
+    .cardsection {
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .cards{
+        display:flex ;
+        flex-direction: column;
+        flex-wrap: wrap;
+      
+    }
+    .grid img{
+        width: 100%;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .footer .box1{
+        width:100%;
+    }
+
+    .footer .box3,.box2 {
+
+        display: none;
+    }
+}
